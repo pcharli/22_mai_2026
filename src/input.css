@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cepegra: #EF9005;
+}
+
+body {
+  @apply flex flex-col h-screen;
+}
+
+/*Search bar styling*/
+.search {
+  @apply bg-gray-100 flex items-center justify-center flex-col shadow-md p-6;
+}
+.logo {
+  @apply h-20;
+}
+
+.search span {
+  @apply self-center;
+}
+
+.search__title {
+  @apply text-4xl mb-6 font-bold text-cepegra;
+}
+
+.search__form {
+  @apply flex flex-col md:gap-4 sm:flex-row;
+}
+.search__form span {
+  @apply hidden sm:block;
+}
+
+.search__input {
+  @apply p-3 m-3 sm:m-0 rounded-md outline-0 max-w-40 w-full text-center bg-gray-50 hover:scale-105 transition-transform;
+  -moz-appearance: textfield;
+}
+
+.search__input::-webkit-inner-spin-button,
+.search__input::-webkit-outer-spin-button {
+  @apply appearance-none;
+}
+
+.search__input--required {
+  @apply bg-gray-200;
+}
+
+.search__submit {
+  @apply  bg-cepegra rounded-md text-white p-3 px-6 hover:cursor-pointer hover:bg-gray-500 hover:scale-105 transition-all;
+}
+
+/*Resulst styling*/
+
+.results {
+  @apply grow p-6 max-w-5xl w-full m-auto;
+}
+
+.result__title {
+  @apply text-3xl font-bold mb-6 text-gray-500;
+}
+
+.result__container {
+  @apply flex flex-col gap-4;
+}
+
+/*Card styling*/
+.card {
+  @apply border-2 border-gray-100 rounded-md p-4 shadow-xl flex flex-col not-open:justify-center open:gap-5 hover:scale-105 transition-transform;
+}
+.arrow {
+  @apply text-cepegra;
+}
+
+
+
+.card a {
+  @apply  text-cepegra underline hover:text-gray-500;
+}
+
+.card:is([open]) .card__title {
+  @apply pb-3 border-b-[1px] border-gray-200;
+}
+
+.card__title {
+  @apply font-semibold hover:cursor-pointer;
+}
+
+.card__more {
+  @apply flex p-3 flex-wrap justify-center;
+}
+
+.card__image {
+  @apply max-h-36;
+}
+
+.card__info {
+  @apply ml-6 flex flex-col justify-center;
+}
+
+.card__text {
+  @apply flex justify-center;
+}
+
+.card__article {
+  @apply min-w-48;
+}
+
+.card__links {
+  @apply border-t-[1px] mt-5 pt-3 border-gray-200 flex justify-between gap-6 items-center;
+}
+
+footer {
+  @apply p-3 mt-5 text-center bg-gray-100 font-bold shadow-md;
+}
+.install {
+  @apply bg-cepegra rounded-md text-white p-3 px-6 hover:cursor-pointer hover:bg-cepegra hover:scale-95 transition-all sticky top-1 shadow m-5;
+}
+.hidden {
+  display: none;
+}
+.date {
+  @apply flex sm:flex-row;
+}

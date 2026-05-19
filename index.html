@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icon/192.png" type="image/png" />
+  <link rel="stylesheet" href="output.min.css" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Trouve des événements historiques !</title>
+  <!-- Inclusion de FontAwesome (version 6) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="install.js"></script>
+</head>
+
+<body>
+  <button class="install hidden">Installe-moi !</button>
+  <header class="search">
+    <img src="images/logo.jpg" alt="Logo du cepegra" class="logo">
+    <h1 class="search__title">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      What’s at this date ?
+    </h1>
+    <form class="search__form">
+      <div class="date">
+        <input required class="search__input search__input--required" placeholder="JJ" min="1" max="31" type="number"
+          id="day" />
+        <span>/</span>
+        <input required min="1" max="12" class="search__input search__input--required" placeholder="MM" type="number"
+          id="month" />
+      </div>
+      <span>/</span>
+      <input class="search__input" placeholder="YYYY (facultatif)" type="number" id="year" />
+      <button class="search__submit">Rechercher</button>
+    </form>
+  </header>
+  <main class="results">
+    <h1 class="result__title hidden"><span class="nbr">x</span>
+      <i class="fa-solid fa-scroll"></i>
+      Résultats :
+    </h1>
+    <div class="result__container">
+      <!--<details class="card">
+        <summary class="card__title">
+          2025 - texte
+        </summary>
+        <div>
+          <div class="card__more">
+            <img class="card__image" src="https://pixy.org/images/placeholder.png" alt="image holder" />
+            <div class="card__info">
+              <p class="card__text">event</p>
+            </div>
+          </div>
+          <div class="card__links">
+            <a class="card__article" href="#">🔗 Lire l'article complet</a>
+            <p class="card__also">Voir aussi : autre</p>
+          </div>
+        </div>
+      </details>-->
+
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 - Cepegra
+  </footer>
+</body>
+
+</html>
