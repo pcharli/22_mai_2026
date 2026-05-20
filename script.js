@@ -20,7 +20,7 @@ handleOffline(); //check if the user is offline
 
 // gestion de la mise offline via le Service Worker
 if ("serviceWorker" in navigator) {
-  // désactiver le service worker
+  // activer le service worker
   //navigator.serviceWorker.register("sw.js");
 }
 

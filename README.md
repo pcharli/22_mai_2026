@@ -1,2 +1,13 @@
-The work to evaluate is on the branch **main**
-The `config.js` file contains the endpoint of the api, should you need to modify it
+# Application
+- use data from Wikipedia by the API
+
+
+# Job
+## 1. add bouton install
+- add script install.js in head
+- remove comment on the button in body
+
+## 2. add offline access
+- remove comment in script.js
+- show the last request if offline => localStorage and cache
+
