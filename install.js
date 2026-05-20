@@ -12,6 +12,7 @@ installButton.addEventListener('click', async e => {
     if(deferdPrompt) {
         deferdPrompt.prompt()
         const outcome = await deferdPrompt.userChoice
+        deferdPrompt = null
         if(outcome.outcome == "accepted") {
             installButton.classList.add('hidden')
         }
